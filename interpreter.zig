@@ -166,7 +166,7 @@ pub fn main() !void {
     try interpreter.assignVariable("x", 5);
     try interpreter.assignVariable("y", 3);
     std.debug.print("x  = {d}\n", .{5});
-    std.debug.print("x  = {d}\n", .{3});
+    std.debug.print("y  = {d}\n", .{3});
 
     // Example expressions
     const expr1 = [_]Token{ .{ .Variable = "x" }, .{ .Operation = .Add }, .{ .Number = 2 } };
